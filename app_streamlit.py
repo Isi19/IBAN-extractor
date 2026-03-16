@@ -43,7 +43,7 @@ with st.sidebar:
     st.header("⚙️ Settings")
     st.markdown("---")
     st.markdown("### Supported formats")
-    st.markdown("- **Images**: PNG, JPG, JPEG, TIFF, BMP, WEBP")
+    st.markdown("- **Images**: PNG, JPG, JPEG")
     st.markdown("- **PDF**: Native text & scanned/image-based")
     st.markdown("---")
     st.markdown("### How it works")
@@ -153,7 +153,7 @@ st.markdown("⬆️ Upload file (auto-fill if valid)")
 uploader_key = f"main_uploader_{st.session_state['uploader_nonce']}"
 uploaded_file = st.file_uploader(
     "Upload image or PDF",
-    type=["png", "jpg", "jpeg", "tiff", "bmp", "webp", "pdf"],
+    type=["png", "jpg", "jpeg", "pdf"],
     label_visibility="visible",
     key=uploader_key,
 )

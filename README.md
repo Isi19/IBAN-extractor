@@ -45,6 +45,8 @@ For Tesseract (required):
 
 ### Streamlit App
 
+Live app: https://isi19-iban-extractor-app-streamlit-kleyqu.streamlit.app/
+
 ```bash
 streamlit run app_streamlit.py
 ```
@@ -56,7 +58,7 @@ from PIL import Image
 from iban_extractor import extract_from_image, extract_from_pdf
 
 # From image (returns at most one best IBAN)
-image = Image.open("invoice.png")
+image = Image.open("iban.png")
 result = extract_from_image(image)
 if result.ibans:
     iban = result.ibans[0]
