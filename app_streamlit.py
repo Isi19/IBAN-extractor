@@ -144,7 +144,7 @@ if st.session_state.get("pending_iban_input") is not None:
 
 st.subheader("IBAN")
 st.text_input(
-    "IBAN field (format: CCkk ...)",
+    "IBAN field",
     key="iban_input",
     placeholder="Type your IBAN or upload a file below",
 )
